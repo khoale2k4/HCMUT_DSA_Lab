@@ -55,6 +55,7 @@ void Heap<T>::remove(T item) {
     elements[index] = elements[count-1];
     count--;
     reheapDown(index);
+    reheapUp(index);
 }
 template<class T>
 void Heap<T>::clear() {
